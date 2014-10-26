@@ -4,7 +4,7 @@ Actually, mostly just shell scripts. OSX-only for now, but I'll make it OS indep
 
 ### Installation
 
-Run this inconspicous `curl` pipe to `sh`:
+Run this inconspicuous `curl` pipe to `sh`:
 
 ```bash
 $ curl setup.vararu.me | sh
