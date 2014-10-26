@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo "Hey there. Never mind me, just setting up your system.\n"
+echo "\n Hey there. Never mind me, just setting up your system.\n"
 
 #./homebrew/install.sh
 
