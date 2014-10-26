@@ -12,10 +12,4 @@ echo " Installing oh-my-zsh. (https://github.com/robbyrussell/oh-my-zsh)"
 #cp -rf .oh-my-zsh-custom ~
 echo "zsh configured.\n"
 
-# Dock base shortcuts.
-
-# BetterTouchTool
-
-# Alternative ix solution
-
 echo " All done! Enjoy.\n"

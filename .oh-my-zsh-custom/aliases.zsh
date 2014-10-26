@@ -26,3 +26,7 @@ alias ll="ls -lah"
 # Advanced network testing tools.
 alias sfantulping="ping 8.8.8.8"
 alias holyping="ping 8.8.8.8"
+
+# Command line pastebin. (http://sprunge.us)
+alias spr="curl -F 'sprunge=<-' http://sprunge.us"
+alias sprr="pbpaste | spr | pbcopy"
