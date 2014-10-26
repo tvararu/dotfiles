@@ -2,6 +2,8 @@
 
 echo "\n Hey there. Never mind me, just setting up your system.\n"
 
+#./defaults/osx.sh
+
 #./homebrew/install.sh
 
 echo " Installing oh-my-zsh. (https://github.com/robbyrussell/oh-my-zsh)"
