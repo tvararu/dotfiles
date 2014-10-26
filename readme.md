@@ -1,4 +1,4 @@
-### dotfiles.
+# dotfiles.
 
 Actually, mostly just shell scripts. OSX-only for now, but I'll make it OS independent when I actually get the need to do so.
 
