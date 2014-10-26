@@ -9,6 +9,7 @@ brew upgrade
 # Utility/essential programs.
 brew install htop
 brew install hub
+brew install mosh
 brew install ssh-copy-id
 brew install tmux
 brew install tree
