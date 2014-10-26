@@ -16,7 +16,7 @@ Or clone the repo and cherry pick whatever you want.
 
 - Huge amount of opinionated OS X, Safari, Spotlight, and misc app defaults, in [osx.sh](defaults/osx.sh).
 - Installs `brew` and `brew cask` if not already present, as well as a lot of essential (and non-essential) console line applications ([brew-install.sh](homebrew/brew-install.sh)) and GUI applications ([brew-cask-install.sh](homebrew/brew-cask-install.sh)).
-- Installs and configures `zsh` with `oh-my-zsh` as the default shell, and adds a few extra exports and aliases on top.
+- Installs and configures `zsh` with `oh-my-zsh` as the default shell, and adds a few extra [exports](.oh-my-zsh-custom/exports.zsh) and [aliases](.oh-my-zsh-custom/aliases.zsh) on top.
 
 ### Credits
 
