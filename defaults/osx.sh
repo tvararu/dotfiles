@@ -124,7 +124,7 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 	OpenWith -bool true \
 	Privileges -bool true
 
-# Hide icons for hard drives, servers, and removable media on the desktop
+# Hide icons for hard drives, servers, and removable media on the desktop.
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool false
 defaults write com.apple.finder ShowHardDrivesOnDesktop -bool false
 defaults write com.apple.finder ShowMountedServersOnDesktop -bool false
@@ -154,7 +154,7 @@ defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebK
 
 ## Spotlight.
 
-# Hide Spotlight tray-icon (and subsequent helper)
+# Hide Spotlight tray-icon (and subsequent helper).
 sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
 
 # Disable Spotlight indexing for any volume that gets mounted and has not yet
