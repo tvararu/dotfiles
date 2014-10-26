@@ -18,18 +18,6 @@ defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
 
-# Hide the Time Machine, Volume, User, and Bluetooth menu bar icons.
-for domain in ~/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
-	defaults write "${domain}" dontAutoLoad -array \
-		"/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
-		"/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
-		"/System/Library/CoreServices/Menu Extras/Volume.menu" \
-		"/System/Library/CoreServices/Menu Extras/User.menu"
-done
-defaults write com.apple.systemuiserver menuExtras -array \
-	"/System/Library/CoreServices/Menu Extras/AirPort.menu" \
-	"/System/Library/CoreServices/Menu Extras/Battery.menu" \
-	"/System/Library/CoreServices/Menu Extras/Clock.menu"
 
 # Check for software updates daily, not just once per week.
 defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
@@ -47,6 +35,27 @@ defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
 
 # Stop iTunes from responding to the keyboard media keys.
 launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
+
+## Menu bar.
+
+# Hide the Time Machine, Volume, User, and Bluetooth menu bar icons.
+for domain in ~/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
+	defaults write "${domain}" dontAutoLoad -array \
+		"/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
+		"/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
+		"/System/Library/CoreServices/Menu Extras/Volume.menu" \
+		"/System/Library/CoreServices/Menu Extras/User.menu"
+done
+defaults write com.apple.systemuiserver menuExtras -array \
+	"/System/Library/CoreServices/Menu Extras/AirPort.menu" \
+	"/System/Library/CoreServices/Menu Extras/Battery.menu" \
+	"/System/Library/CoreServices/Menu Extras/Clock.menu"
+
+# Customize the clock look.
+defaults write com.apple.menuextra.clock DateFormat -string "EEE d MMM  HH:mm:ss"
+
+# Change the battery to show the percentage.
+defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 
 ## Keyboard.
 
@@ -146,47 +155,48 @@ defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebK
 
 ## Spotlight.
 
-## Hide Spotlight tray-icon (and subsequent helper)
-#sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
-#
-## Disable Spotlight indexing for any volume that gets mounted and has not yet
-## been indexed before.
-## Use `sudo mdutil -i off "/Volumes/foo"` to stop indexing any volume.
-#sudo defaults write /.Spotlight-V100/VolumeConfiguration Exclusions -array "/Volumes"
-#
-## Change indexing order and disable some file types.
-#defaults write com.apple.spotlight orderedItems -array \
-#	'{"enabled" = 1;"name" = "APPLICATIONS";}' \
-#	'{"enabled" = 1;"name" = "SYSTEM_PREFS";}' \
-#	'{"enabled" = 1;"name" = "DIRECTORIES";}' \
-#	'{"enabled" = 1;"name" = "PDF";}' \
-#	'{"enabled" = 1;"name" = "FONTS";}' \
-#	'{"enabled" = 0;"name" = "DOCUMENTS";}' \
-#	'{"enabled" = 0;"name" = "MESSAGES";}' \
-#	'{"enabled" = 0;"name" = "CONTACT";}' \
-#	'{"enabled" = 0;"name" = "EVENT_TODO";}' \
-#	'{"enabled" = 0;"name" = "IMAGES";}' \
-#	'{"enabled" = 0;"name" = "BOOKMARKS";}' \
-#	'{"enabled" = 0;"name" = "MUSIC";}' \
-#	'{"enabled" = 0;"name" = "MOVIES";}' \
-#	'{"enabled" = 0;"name" = "PRESENTATIONS";}' \
-#	'{"enabled" = 0;"name" = "SPREADSHEETS";}' \
-#	'{"enabled" = 0;"name" = "SOURCE";}'
-#
-## Load new settings before rebuilding the index.
-#killall mds > /dev/null 2>&1
-#
-## Make sure indexing is enabled for the main volume.
-#sudo mdutil -i on / > /dev/null
-#
-## Rebuild the index from scratch.
-#sudo mdutil -E / > /dev/null
+# Hide Spotlight tray-icon (and subsequent helper)
+sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
+
+# Disable Spotlight indexing for any volume that gets mounted and has not yet
+# been indexed before.
+# Use `sudo mdutil -i off "/Volumes/foo"` to stop indexing any volume.
+sudo defaults write /.Spotlight-V100/VolumeConfiguration Exclusions -array "/Volumes"
+
+# Change indexing order and disable some file types.
+defaults write com.apple.spotlight orderedItems -array \
+	'{"enabled" = 1;"name" = "APPLICATIONS";}' \
+	'{"enabled" = 1;"name" = "SYSTEM_PREFS";}' \
+	'{"enabled" = 1;"name" = "DIRECTORIES";}' \
+	'{"enabled" = 1;"name" = "PDF";}' \
+	'{"enabled" = 1;"name" = "FONTS";}' \
+	'{"enabled" = 0;"name" = "DOCUMENTS";}' \
+	'{"enabled" = 0;"name" = "MESSAGES";}' \
+	'{"enabled" = 0;"name" = "CONTACT";}' \
+	'{"enabled" = 0;"name" = "EVENT_TODO";}' \
+	'{"enabled" = 0;"name" = "IMAGES";}' \
+	'{"enabled" = 0;"name" = "BOOKMARKS";}' \
+	'{"enabled" = 0;"name" = "MUSIC";}' \
+	'{"enabled" = 0;"name" = "MOVIES";}' \
+	'{"enabled" = 0;"name" = "PRESENTATIONS";}' \
+	'{"enabled" = 0;"name" = "SPREADSHEETS";}' \
+	'{"enabled" = 0;"name" = "SOURCE";}'
+
+# Load new settings before rebuilding the index.
+killall mds > /dev/null 2>&1
+
+# Make sure indexing is enabled for the main volume.
+sudo mdutil -i on / > /dev/null
+
+# Rebuild the index from scratch.
+sudo mdutil -E / > /dev/null
 
 ## Transmission.app.
 
-# Use `~/Downloads` to store incomplete downloads.
+# Use `~/Downloads` to store incomplete downloads, and as default download folder.
 defaults write org.m0k.transmission UseIncompleteDownloadFolder -bool true
 defaults write org.m0k.transmission IncompleteDownloadFolder -string "${HOME}/Downloads"
+defaults write org.m0k.transmission DownloadLocationConstant -integer 1
 
 # Don’t prompt for confirmation before downloading.
 defaults write org.m0k.transmission DownloadAsk -bool false
