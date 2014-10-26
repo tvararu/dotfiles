@@ -65,13 +65,13 @@ defaults write NSGlobalDomain KeyRepeat -integer 2
 # Set Keyboard > Delay Until Repeat to be the fastest possible from System Preferences.
 defaults write NSGlobalDomain InitialKeyRepeat -integer 15
 
-# Replace Caps Lock with Control.
-# Get the ID Vendor and Product ID combo of our internal keyboard.
-# For the Macbook Air, should be something like: "1452-657-".
-export KeyboardID=$(ioreg -n IOHIDKeyboard -r | grep -e VendorID\" -e ProductID | tr -d \"\|[:blank:] | cut -d\= -f2 | tr '\n' -)
-# Append 0 to it, so it's "1452-657-0".
-export KeyboardID="${KeyboardID}0"
-defaults write -g com.apple.keyboard.modifiermapping.$KeyboardID -array-add '<dict><key>HIDKeyboardModifierMappingDst</key><integer>2</integer><key>HIDKeyboardModifierMappingSrc</key><integer>0</integer></dict>'
+## Replace Caps Lock with Control.
+## Get the ID Vendor and Product ID combo of our internal keyboard.
+## For the Macbook Air, should be something like: "1452-657-".
+#export KeyboardID=$(ioreg -n IOHIDKeyboard -r | grep -e VendorID\" -e ProductID | tr -d "\"\|[:blank:]" | cut -d\= -f2 | tr '\n' -)
+## Append 0 to it, so it's "1452-657-0".
+#export KeyboardID="${KeyboardID}0"
+#defaults write -g com.apple.keyboard.modifiermapping.$KeyboardID -array-add '<dict><key>HIDKeyboardModifierMappingDst</key><integer>2</integer><key>HIDKeyboardModifierMappingSrc</key><integer>0</integer></dict>'
 
 ## Trackpad.
 
