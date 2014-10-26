@@ -75,6 +75,9 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeF
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerVertSwipeGesture -integer 0
 defaults write NSGlobalDomain com.apple.trackpad.threeFingerSwipeGesture -integer 1
 
+# Enable four finger Exposé.
+defaults write com.apple.dock showAppExposeGestureEnabled -integer 1
+
 ## Dock.
 
 # Turn on dock autohiding.

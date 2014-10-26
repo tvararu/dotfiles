@@ -11,9 +11,12 @@ else
   echo "Homebrew successfully installed.\n"
 fi
 
-# Run the provided brewfile.sh.
-#./brewfile.sh
+# Run the provided brewfile.
+./brew-install.sh
 
-# Run the provided caskfile.sh.
-./caskfile.sh
+# Run the provided caskfile.
+./brew-cask-install.sh
+
+git config --global user.name "Theodor Vararu"
+git config --global user.email "theo@vararu.org"
 
