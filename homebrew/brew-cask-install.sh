@@ -1,7 +1,7 @@
 echo " Installing native apps using \`brew cask\`."
 
 brew install caskroom/cask/brew-cask
-tap caskroom/versions
+brew tap caskroom/versions
 
 brew cask install alfred
 brew cask install atom
