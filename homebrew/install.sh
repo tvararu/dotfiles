@@ -26,3 +26,7 @@ fi
 
 # Safari tab switching.
 
+# oh-my-zsh
+
+# BetterTouchTool
+
