@@ -31,7 +31,7 @@ brew cask alfred
 mkdir -p ~/.tmp/
 wget https://github.com/rs/SafariTabSwitching/releases/download/1.2.7/Safari.Tab.Switching-1.2.7.zip -P ~/.tmp/
 unzip ~/.tmp/Safari.Tab.Switching-1.2.7.zip
-open ~/.tmp/Safari Tab Switching-1.2.7.pkg
+open ~/.tmp/"Safari Tab Switching-1.2.7.pkg"
 
 echo "Successfully installed all brew cask apps.\n"
 
