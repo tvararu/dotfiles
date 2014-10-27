@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="screenshot.png" alt="Screenshot" />
+</div>
+
 # dotfiles.
 
 Actually, mostly just shell scripts. OSX-only for now, but I'll make it OS independent when I actually get the need to do so.
