@@ -21,6 +21,9 @@ set shiftwidth=2
 set softtabstop=2
 set expandtab
 
+" Show invisibles as a dot.
+set list listchars=tab:\ \ ,trail:·
+
 " However, `make` uses real tabs.
 autocmd filetype make set noexpandtab
 

@@ -8,6 +8,8 @@ Actually, mostly just shell scripts. OSX-only for now, but I'll make it OS indep
 
 ### Installation
 
+:warning: I haven't touched these scripts in a while, so they may be stale. Use at your own risk. :warning:
+
 Run this inconspicuous `curl` pipe to `sh`:
 
 ```bash
