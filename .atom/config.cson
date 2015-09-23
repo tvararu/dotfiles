@@ -1,0 +1,21 @@
+"*":
+  welcome:
+    showOnStartup: false
+  core: {}
+  editor:
+    invisibles: {}
+    preferredLineLength: 120
+  linter:
+    lintOnChange: false
+    lintOnChangeInterval: 0
+    lintOnFly: false
+  "one-dark-ui":
+    layoutMode: "Compact"
+  "file-icons":
+    onChanges: true
+  tabs:
+    enableVcsColoring: true
+  react: {}
+  "linter-scss-lint": {}
+  "linter-js-standard":
+    honorStyleSettings: true
