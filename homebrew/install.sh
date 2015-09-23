@@ -12,9 +12,9 @@ else
 fi
 
 # Run the provided brewfile.
-./brew-install.sh
+./homebrew/brew-install.sh
 
 # Run the provided caskfile.
-./brew-cask-install.sh
+./homebrew/brew-cask-install.sh
 
 echo " Homebrew install done.\n"
