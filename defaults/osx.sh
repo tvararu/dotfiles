@@ -21,34 +21,11 @@ defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
 # Check for software updates daily, not just once per week.
 defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 
-# Require password immediately after sleep or screen saver begins.
-defaults write com.apple.screensaver askForPassword -int 1
-defaults write com.apple.screensaver askForPasswordDelay -int 0
-
-# Disable local Time Machine snapshots.
-sudo tmutil disablelocal
-
 # Use scroll gesture with the Ctrl (^) modifier key to zoom.
 defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
 defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
 
-# Stop iTunes from responding to the keyboard media keys.
-launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
-
 ## Menu bar.
-
-# Hide the Time Machine, Volume, User, and Bluetooth menu bar icons.
-for domain in ~/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
-	defaults write "${domain}" dontAutoLoad -array \
-		"/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
-		"/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
-		"/System/Library/CoreServices/Menu Extras/Volume.menu" \
-		"/System/Library/CoreServices/Menu Extras/User.menu"
-done
-defaults write com.apple.systemuiserver menuExtras -array \
-	"/System/Library/CoreServices/Menu Extras/AirPort.menu" \
-	"/System/Library/CoreServices/Menu Extras/Battery.menu" \
-	"/System/Library/CoreServices/Menu Extras/Clock.menu"
 
 # Customize the clock look.
 defaults write com.apple.menuextra.clock DateFormat -string "EEE d MMM  HH:mm:ss"
@@ -63,14 +40,6 @@ defaults write NSGlobalDomain KeyRepeat -integer 2
 
 # Set Keyboard > Delay Until Repeat to be the fastest possible from System Preferences.
 defaults write NSGlobalDomain InitialKeyRepeat -integer 15
-
-## Replace Caps Lock with Control.
-## Get the ID Vendor and Product ID combo of our internal keyboard.
-## For the Macbook Air, should be something like: "1452-657-".
-#export KeyboardID=$(ioreg -n IOHIDKeyboard -r | grep -e VendorID\" -e ProductID | tr -d "\"\|[:blank:]" | cut -d\= -f2 | tr '\n' -)
-## Append 0 to it, so it's "1452-657-0".
-#export KeyboardID="${KeyboardID}0"
-#defaults write -g com.apple.keyboard.modifiermapping.$KeyboardID -array-add '<dict><key>HIDKeyboardModifierMappingDst</key><integer>2</integer><key>HIDKeyboardModifierMappingSrc</key><integer>0</integer></dict>'
 
 ## Trackpad.
 
@@ -138,9 +107,6 @@ defaults write com.apple.Safari HomePage -string "about:blank"
 # Always show tab bar.
 defaults write com.apple.Safari AlwaysShowTabBar -boolean true
 
-# Disable Safari’s thumbnail cache for History and Top Sites.
-defaults write com.apple.Safari DebugSnapshotsUpdatePolicy -int 2
-
 # Enable Safari’s debug menu.
 defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
 
@@ -154,41 +120,10 @@ defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebK
 
 ## Spotlight.
 
-# Hide Spotlight tray-icon (and subsequent helper).
-sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
-
 # Disable Spotlight indexing for any volume that gets mounted and has not yet
 # been indexed before.
 # Use `sudo mdutil -i off "/Volumes/foo"` to stop indexing any volume.
 sudo defaults write /.Spotlight-V100/VolumeConfiguration Exclusions -array "/Volumes"
-
-# Change indexing order and disable some file types.
-defaults write com.apple.spotlight orderedItems -array \
-	'{"enabled" = 1;"name" = "APPLICATIONS";}' \
-	'{"enabled" = 1;"name" = "SYSTEM_PREFS";}' \
-	'{"enabled" = 1;"name" = "DIRECTORIES";}' \
-	'{"enabled" = 1;"name" = "PDF";}' \
-	'{"enabled" = 1;"name" = "FONTS";}' \
-	'{"enabled" = 0;"name" = "DOCUMENTS";}' \
-	'{"enabled" = 0;"name" = "MESSAGES";}' \
-	'{"enabled" = 0;"name" = "CONTACT";}' \
-	'{"enabled" = 0;"name" = "EVENT_TODO";}' \
-	'{"enabled" = 0;"name" = "IMAGES";}' \
-	'{"enabled" = 0;"name" = "BOOKMARKS";}' \
-	'{"enabled" = 0;"name" = "MUSIC";}' \
-	'{"enabled" = 0;"name" = "MOVIES";}' \
-	'{"enabled" = 0;"name" = "PRESENTATIONS";}' \
-	'{"enabled" = 0;"name" = "SPREADSHEETS";}' \
-	'{"enabled" = 0;"name" = "SOURCE";}'
-
-# Load new settings before rebuilding the index.
-killall mds > /dev/null 2>&1
-
-# Make sure indexing is enabled for the main volume.
-sudo mdutil -i on / > /dev/null
-
-# Rebuild the index from scratch.
-sudo mdutil -E / > /dev/null
 
 ## Transmission.app.
 
