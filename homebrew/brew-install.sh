@@ -7,17 +7,16 @@ brew update
 brew upgrade
 
 # Utility/essential programs.
-brew install htop
+brew install fish
 brew install hub
 brew install mosh
 brew install ssh-copy-id
-brew install tmux
 brew install tree
 brew install wget
 brew install z
-brew install zsh
 
 # Development dependencies.
+brew install heroku-toolbelt
 brew install node
 
 # Games and fun stuff.
@@ -33,18 +32,10 @@ brew install toilet
 # Remove outdated versions from the cellar.
 brew cleanup
 
-# Run brew caveats.
-echo "Running brew caveats. May require sudo."
-
-# htop weirdery.
-sudo chown root:wheel /usr/local/Cellar/htop-osx/0.8.2.2/bin/htop
-sudo chmod u+s /usr/local/Cellar/htop-osx/0.8.2.2/bin/htop
-
-# Change default shell to zsh.
-if ! grep --quiet $(which zsh) /etc/shells; then
-  sudo sh -c "echo $(which zsh) >> /etc/shells"
+# Change default shell to fish.
+if ! grep --quiet $(which fish) /etc/shells; then
+  sudo sh -c "echo $(which fish) >> /etc/shells"
 fi
-chsh -s $(which zsh)
+chsh -s $(which fish)
 
 echo "Successfully installed all brew apps.\n"
-
