@@ -8,4 +8,7 @@ echo "\n Hey there. Never mind me, just setting up your system.\n"
 
 ./configuration/atom.sh
 
+cp .vimrc ~
+cp -rv .config ~
+
 echo " All done! Enjoy.\n"
