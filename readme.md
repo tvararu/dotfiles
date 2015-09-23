@@ -8,21 +8,12 @@ Actually, mostly just shell scripts. OSX-only for now, but I'll make it OS indep
 
 ### Installation
 
-:warning: I haven't touched these scripts in a while, so they may be stale. Use at your own risk. :warning:
-
-Run this inconspicuous `curl` pipe to `sh`:
-
-```bash
-$ curl setup.vararu.me | sh
-```
-
-Or clone the repo and cherry pick whatever you want.
+Clone the repo and cherry pick whatever you want.
 
 ### Features
 
 - Huge amount of opinionated OS X, Safari, Spotlight, and misc app defaults, in [osx.sh](defaults/osx.sh).
 - Installs `brew` and `brew cask` if not already present, as well as a lot of essential (and non-essential) console line applications ([brew-install.sh](homebrew/brew-install.sh)) and GUI applications ([brew-cask-install.sh](homebrew/brew-cask-install.sh)).
-- Installs and configures `zsh` with `oh-my-zsh` as the default shell, and adds a few extra [exports](.oh-my-zsh-custom/exports.zsh) and [aliases](.oh-my-zsh-custom/aliases.zsh) on top.
 
 ### Credits
 
