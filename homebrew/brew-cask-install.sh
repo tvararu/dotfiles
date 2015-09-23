@@ -16,4 +16,4 @@ brew cask install slack
 brew cask install spectacle
 brew cask install transmission
 
-echo "Successfully installed all brew cask apps.\n"
+echo " Successfully installed all brew cask apps.\n"
