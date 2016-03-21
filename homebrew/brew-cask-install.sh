@@ -9,9 +9,7 @@ brew cask install bettertouchtool
 brew cask install dropbox
 brew cask install flux
 brew cask install iterm2
-brew cask install mailbox
 brew cask install nosleep
-brew cask install screenhero
 brew cask install slack
 brew cask install spectacle
 brew cask install transmission
