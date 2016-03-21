@@ -5,3 +5,6 @@ set -gx OMF_PATH /Users/tvararu/.local/share/omf
 
 # Load oh-my-fish configuration.
 source $OMF_PATH/init.fish
+
+# Remove the newcomer fish greeting.
+set fish_greeting ""
