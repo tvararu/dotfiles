@@ -1,3 +1,3 @@
 function vup
-	vagrant up
+	vagrant up $argv
 end
