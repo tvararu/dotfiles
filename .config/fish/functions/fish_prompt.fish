@@ -44,4 +44,3 @@ function fish_prompt
 
   echo -n -s $arrow ' ' $cwd $git_info $normal ' '
 end
-
