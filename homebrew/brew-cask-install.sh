@@ -5,7 +5,6 @@ brew tap caskroom/versions
 
 brew cask install alfred
 brew cask install atom
-brew cask install bettertouchtool
 brew cask install dropbox
 brew cask install flux
 brew cask install iterm2
