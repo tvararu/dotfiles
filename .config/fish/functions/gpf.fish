@@ -1,3 +1,3 @@
 function gpf
-	git push -f origin (git rev-parse --abbrev-ref HEAD)
+	git push --force-with-lease origin (git rev-parse --abbrev-ref HEAD)
 end
