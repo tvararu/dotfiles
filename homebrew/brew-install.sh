@@ -13,6 +13,7 @@ brew install mosh
 brew install ssh-copy-id
 brew install tree
 brew install wget
+brew install kryptco/tap/kr
 
 echo " brew installing development dependencies."
 brew install heroku-toolbelt
@@ -24,7 +25,7 @@ brew install cmatrix
 brew install cowsay
 brew install figlet
 brew install fortune
-brew install homebrew/games/nethack
+brew install nethack
 brew install sl
 brew install toilet
 
