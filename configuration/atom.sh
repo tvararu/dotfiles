@@ -18,4 +18,4 @@ apm install sort-lines
 apm install toggle-quotes
 apm install vim-mode-plus
 
-echo " Done installing atom packages."
+echo " Done installing atom packages.\n"

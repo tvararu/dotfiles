@@ -7,6 +7,7 @@ echo "\n Hey there. Never mind me, just setting up your system.\n"
 ./homebrew/install.sh
 
 ./configuration/atom.sh
+./configuration/keybase.sh
 
 cp .vimrc ~
 cp .gitconfig ~
