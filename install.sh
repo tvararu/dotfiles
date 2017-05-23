@@ -11,5 +11,6 @@ echo "\n Hey there. Never mind me, just setting up your system.\n"
 cp .vimrc ~
 cp -rv .config ~
 cp -rv .atom ~
+cp -rv .ssh ~
 
 echo " All done! Enjoy.\n"
