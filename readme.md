@@ -4,16 +4,21 @@
 
 # dotfiles.
 
-Actually, mostly just shell scripts. OSX-only for now, but I'll make it OS independent when I actually get the need to do so.
+Actually, mostly just shell scripts. macOS focused.
 
 ### Installation
 
 Clone the repo and cherry pick whatever you want.
 
+Requires Xcode to work.
+
 ### Features
 
-- Huge amount of opinionated OS X, Safari, Spotlight, and misc app defaults, in [osx.sh](defaults/osx.sh).
-- Installs `brew` and `brew cask` if not already present, as well as a lot of essential (and non-essential) console line applications ([brew-install.sh](homebrew/brew-install.sh)) and GUI applications ([brew-cask-install.sh](homebrew/brew-cask-install.sh)).
+- Initialises macOS (and some apps) with opinionated defaults in [macos.sh](defaults/macos.sh);
+- Installs `brew` if not present, as well as some CLI apps ([brew-install.sh](homebrew/brew-install.sh)) and GUI apps ([brew-cask-install.sh](homebrew/brew-cask-install.sh));
+- Configures [atom](configuration/atom.sh) and [keybase with gpg](configuration/keybase.sh);
+- Configures [.gitconfig](.gitconfig) and [gpg](.gnupg/gpg.conf) with my own git email and pgp key;
+- Configures `vim` with the most spartan [.vimrc](.vimrc) you've ever seen.
 
 ### Credits
 
@@ -21,7 +26,7 @@ Clone the repo and cherry pick whatever you want.
 - [Steve Losh](https://bitbucket.org/sjl/dotfiles/src/e8ba45f413665278c11f2de3a1d67a1da3832d34/osx.sh?at=default)
 - [Gary Bernhardt](https://github.com/garybernhardt/dotfiles)
 - [vladh](https://github.com/vladh/dotfiles)
-- [secrets.blacktree.com](http://secrets.blacktree.com)
+- [secrets.blacktree.com](http://secrets.blacktree.com) (RIP)
 
 ### License
 

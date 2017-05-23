@@ -1,3 +1,5 @@
+#!/bin/sh
+
 echo " Installing native apps using \`brew cask\`."
 
 brew cask install 1password

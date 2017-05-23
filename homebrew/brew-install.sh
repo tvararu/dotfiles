@@ -1,3 +1,5 @@
+#!/bin/sh
+
 echo " Installing brew apps."
 
 echo " Making sure we’re using the latest Homebrew."
