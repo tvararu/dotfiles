@@ -3,31 +3,43 @@
     html:
       indent_size: 2
       preserve_newlines: false
-  welcome:
-    showOnStartup: false
   core:
-    disabledPackages: [
-      "linter-eslint"
-    ]
-    packagesWithKeymapsDisabled: [
-      "case-switch"
-    ]
+    disabledPackages: []
+    telemetryConsent: "limited"
   editor:
     fontFamily: "\"Fira Code\""
-    fontSize: 15
+    fontSize: 17
     invisibles: {}
     preferredLineLength: 120
-  linter:
-    lintOnFly: false
-  "one-dark-ui":
-    layoutMode: "Compact"
-  "one-light-ui":
-    layoutMode: "Compact"
+    showInvisibles: true
   "file-icons":
+    coloured: false
     onChanges: true
-  tabs:
-    enableVcsColoring: true
-  react: {}
-  "linter-scss-lint": {}
+  "flow-ide": {}
+  "language-babel":
+    taggedTemplateGrammar: [
+      "\"(?<=<style jsx>{)|(?<=<style jsx global>{)\":source.css.styled"
+    ]
+  linter: {}
   "linter-js-standard":
     honorStyleSettings: true
+    showEslintRules: true
+  "linter-ui-default":
+    panelHeight: 255
+    showPanel: true
+  "one-dark-ui": {}
+  "one-light-ui":
+    layoutMode: "Compact"
+  "prettier-atom":
+    formatOnSaveOptions:
+      enabled: true
+    prettierOptions:
+      bracketSpacing: false
+      parser: "flow"
+      semi: false
+      singleQuote: true
+    useEslint: true
+  tabs:
+    enableVcsColoring: true
+  welcome:
+    showOnStartup: false
