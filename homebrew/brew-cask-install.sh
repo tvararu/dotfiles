@@ -6,6 +6,7 @@ brew cask install atom
 brew cask install dropbox
 brew cask install flux
 brew cask install iterm2
+brew cask install keybase
 brew cask install nosleep
 brew cask install qlmarkdown
 brew cask install slack
