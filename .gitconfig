@@ -1,0 +1,8 @@
+[user]
+  name = Theodor Vararu
+  email = theo@vararu.org
+  signingkey = F08553D8
+[commit]
+  gpgsign = true
+[core]
+  excludesfile = /Users/tvararu/.gitignore.global
