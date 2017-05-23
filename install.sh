@@ -14,5 +14,6 @@ cp .gitignore.global ~
 cp -rv .config ~
 cp -rv .atom ~
 cp -rv .ssh ~
+cp -rv .gnupg ~
 
 echo " All done! Enjoy.\n"
