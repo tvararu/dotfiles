@@ -1,11 +1,13 @@
 "*":
   "atom-beautify":
     html:
+      default_beautifier: "Pretty Diff"
       indent_size: 2
       preserve_newlines: false
   core:
     disabledPackages: []
     telemetryConsent: "limited"
+    titleBar: "custom"
   editor:
     fontFamily: "\"Fira Code\""
     fontSize: 17
@@ -15,29 +17,24 @@
   "file-icons":
     coloured: false
     onChanges: true
-  "flow-ide": {}
+  "fuzzy-finder":
+    ignoredNames: [
+      "node_modules"
+    ]
   "language-babel":
     taggedTemplateGrammar: [
       "\"(?<=<style jsx>{)|(?<=<style jsx global>{)\":source.css.styled"
     ]
-  linter: {}
-  "linter-js-standard":
-    honorStyleSettings: true
-    showEslintRules: true
-  "linter-ui-default":
-    panelHeight: 255
-    showPanel: true
+  "no-title-bar":
+    enableLiberalWindowDragging: false
   "one-dark-ui": {}
-  "one-light-ui":
-    layoutMode: "Compact"
+  "one-light-ui": {}
   "prettier-atom":
     formatOnSaveOptions:
       enabled: true
+      showInStatusBar: true
     prettierOptions:
-      bracketSpacing: false
       parser: "flow"
-      semi: false
-      singleQuote: true
     useEslint: true
   tabs:
     enableVcsColoring: true
