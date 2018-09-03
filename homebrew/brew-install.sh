@@ -12,15 +12,14 @@ echo " brew installing utility/essential programs."
 brew install fish
 brew install gpg
 brew install hub
-brew install kryptco/tap/kr
 brew install mosh
 brew install ssh-copy-id
 brew install tree
 brew install wget
 
 echo " brew installing development dependencies."
-brew install heroku-toolbelt
 brew install node
+brew install yarn
 
 echo " brew installing games and fun stuff."
 brew install archey
@@ -33,6 +32,7 @@ brew install nethack
 brew install sl
 brew install toilet
 brew install wakeonlan
+brew install youtube-dl
 
 echo " Removing outdated versions from the cellar."
 brew cleanup
