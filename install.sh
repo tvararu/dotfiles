@@ -14,7 +14,6 @@ cp .gitconfig ~
 cp .gitignore.global ~
 cp -rv .config ~
 cp -rv .atom ~
-cp -rv .ssh ~
 cp -rv .gnupg ~
 cp -rv .bin ~
 
