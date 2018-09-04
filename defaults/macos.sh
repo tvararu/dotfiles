@@ -25,6 +25,11 @@ echo "- Use scroll gesture with the Ctrl (^) modifier key to zoom."
 defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
 defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
 
+echo "- Disable guest sign in and guest access to file shares."
+defaults write /Library/Preferences/com.apple.loginwindow GuestEnabled -bool NO
+defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server AllowGuestAccess -bool NO
+defaults write /Library/Preferences/com.apple.AppleFileServer guestAccess -bool NO
+
 echo "\n Menu bar."
 
 echo "- Customize the clock look."
