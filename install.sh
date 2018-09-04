@@ -16,5 +16,6 @@ cp -rv .config ~
 cp -rv .atom ~
 cp -rv .gnupg ~
 cp -rv .bin ~
+cp -rv .ssh ~
 
 echo " All done! Enjoy.\n"
