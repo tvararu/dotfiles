@@ -20,6 +20,7 @@ brew install wget
 echo " brew installing development dependencies."
 brew install node
 brew install yarn
+brew install homebrew/cask-fonts/font-fira-code
 
 echo " brew installing games and fun stuff."
 brew install archey
