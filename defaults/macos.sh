@@ -30,6 +30,12 @@ defaults write /Library/Preferences/com.apple.loginwindow GuestEnabled -bool NO
 defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server AllowGuestAccess -bool NO
 defaults write /Library/Preferences/com.apple.AppleFileServer guestAccess -bool NO
 
+echo "- Use Graphite colour for Appearance."
+osascript -e 'tell application "System Events" to tell appearance preferences to set appearance to graphite'
+
+echo "- Automatically hide and show the menu bar."
+defaults write NSGlobalDomain _HIHideMenuBar -bool true
+
 echo "\n Menu bar."
 
 echo "- Customize the clock look."
@@ -37,6 +43,9 @@ defaults write com.apple.menuextra.clock DateFormat -string "EEE d MMM  HH:mm:ss
 
 echo "- Change the battery to show the percentage."
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
+
+echo "- Use dark mode menu bar and dock."
+osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to true'
 
 echo "\n Keyboard."
 
@@ -122,6 +131,12 @@ defaults write com.apple.Safari IncludeDevelopMenu -bool true
 defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
 defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true
 
+echo "- Disable AutoFill."
+defaults write com.apple.Safari AutoFillFromAddressBook -bool false
+defaults write com.apple.Safari AutoFillPasswords -bool false
+defaults write com.apple.Safari AutoFillCreditCardData -bool false
+defaults write com.apple.Safari AutoFillMiscellaneousForms -bool false
+
 echo "\n Spotlight."
 
 echo "- Disable Spotlight indexing for any volume that gets mounted and has not yet been indexed before."
@@ -146,5 +161,15 @@ defaults write org.m0k.transmission WarningDonate -bool false
 
 echo "- Hide the legal disclaimer."
 defaults write org.m0k.transmission WarningLegal -bool false
+
+echo "- Set up IP block list."
+defaults write org.m0k.transmission BlocklistNew -bool true
+defaults write org.m0k.transmission BlocklistURL -string "http://john.bitsurge.net/public/biglist.p2p.gz"
+defaults write org.m0k.transmission BlocklistAutoUpdate -bool true
+
+echo"\n iTerm2.app."
+
+echo "- Disable the prompt when quitting iTerm."
+defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 
 echo "\n All done."
