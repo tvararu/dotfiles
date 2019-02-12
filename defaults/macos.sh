@@ -137,6 +137,10 @@ defaults write com.apple.Safari AutoFillPasswords -bool false
 defaults write com.apple.Safari AutoFillCreditCardData -bool false
 defaults write com.apple.Safari AutoFillMiscellaneousForms -bool false
 
+echo "- Enable custom stylesheet."
+defaults write com.apple.Safari UserStyleSheetEnabled -bool true
+defaults write com.apple.Safari UserStyleSheetLocationURLString -string "/Users/tvararu/github/dotfiles/safari.css"
+
 echo "\n Spotlight."
 
 echo "- Disable Spotlight indexing for any volume that gets mounted and has not yet been indexed before."
