@@ -14,6 +14,7 @@ brew install gpg
 brew install hub
 brew install mosh
 brew install ssh-copy-id
+brew install switchaudio-osx
 brew install tree
 brew install wget
 
