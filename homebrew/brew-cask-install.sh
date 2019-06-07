@@ -8,16 +8,11 @@ brew cask install atom
 brew cask install cathode
 brew cask install coconutbattery
 brew cask install diskwave
-brew cask install google-chrome
 brew cask install iterm2
 brew cask install keybase
 brew cask install messenger
-brew cask install nosleep
-brew cask install plex-media-player
-brew cask install plexamp
 brew cask install qlmarkdown
 brew cask install slack
-brew cask install steam
 brew cask install spectacle
 brew cask install the-unarchiver
 brew cask install transmission
