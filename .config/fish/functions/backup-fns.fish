@@ -1,3 +1,3 @@
 function backup-fns
-  cp -r ~/.config/fish/functions ~/github/dotfiles/.config/fish/
+  cp -r ~/.config/fish/functions ~/github/dotfiles/.config/fish
 end
