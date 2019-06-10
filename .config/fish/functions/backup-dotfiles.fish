@@ -9,4 +9,5 @@ function backup-dotfiles
   cp ~/.atom/keymap.cson $DFPATH/.atom
   cp ~/.atom/styles.less $DFPATH/.atom
   cp -r ~/.bin $DFPATH
+  cp ~/.ssh/config $DFPATH/.ssh
 end
