@@ -4,16 +4,21 @@
       default_beautifier: "Pretty Diff"
       indent_size: 2
       preserve_newlines: false
+  "atom-ide-ui":
+    "atom-ide-code-format":
+      formatOnSave: true
   core:
-    disabledPackages: []
     telemetryConsent: "limited"
-    titleBar: "custom"
+    titleBar: "hidden"
   editor:
     fontFamily: "\"Fira Code\""
-    fontSize: 17
+    fontSize: 15
     invisibles: {}
     preferredLineLength: 120
     showInvisibles: true
+    softWrap: true
+  "exception-reporting":
+    userId: "e55cc812-438c-4cfa-a9b8-a78cdae94846"
   "file-icons":
     coloured: false
     onChanges: true
@@ -25,6 +30,12 @@
     taggedTemplateGrammar: [
       "\"(?<=<style jsx>{)|(?<=<style jsx global>{)\":source.css.styled"
     ]
+  linter:
+    disabledProviders: [
+      "RuboCop"
+    ]
+  "linter-ui-default":
+    showPanel: true
   "no-title-bar":
     enableLiberalWindowDragging: false
   "one-dark-ui": {}
@@ -35,8 +46,9 @@
       showInStatusBar: true
     prettierOptions:
       parser: "flow"
-    useEslint: true
   tabs:
     enableVcsColoring: true
+  "tree-view":
+    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false

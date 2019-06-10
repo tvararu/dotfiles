@@ -5,4 +5,5 @@ function install-dotfiles
   cp $DFPATH/.gitconfig ~
   cp $DFPATH/.gitignore.global ~
   cp $DFPATH/.config/fish/config.fish ~/.config/fish
+  cp -r $DFPATH/.atom ~
 end
