@@ -568,6 +568,8 @@
 	</dict>
 	<key>Default Bookmark Guid</key>
 	<string>984A4E3D-F1C0-46C4-8E6F-701DD14B3D10</string>
+	<key>DimOnlyText</key>
+	<false/>
 	<key>FlashTabBarInFullscreen</key>
 	<true/>
 	<key>HideActivityIndicator</key>
@@ -633,19 +635,25 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>610 139 700 622 0 0 1440 900 </string>
+	<string>370 208 700 622 0 0 1440 900 </string>
+	<key>NSWindow Frame SessionsPreferences</key>
+	<string>269 126 606 469 0 0 1440 900 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>813 1774 796 486 -568 900 2560 1440 </string>
+	<string>-235 1299 796 486 -235 900 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>723 0 714 900 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>3 423 650 475 0 0 1440 900 </string>
+	<string>395 213 650 475 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>3 5 714 441 0 0 1440 900 </string>
+	<string>3 0 650 475 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
 	<string>723 5 714 441 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
 	<string>723 455 714 441 0 0 1440 900 </string>
+	<key>NeverWarnAboutShortLivedSessions_984A4E3D-F1C0-46C4-8E6F-701DD14B3D10</key>
+	<true/>
+	<key>NeverWarnAboutShortLivedSessions_984A4E3D-F1C0-46C4-8E6F-701DD14B3D10_selection</key>
+	<integer>0</integer>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1373,10 +1381,16 @@
 			<string>/Users/tvararu</string>
 		</dict>
 	</array>
+	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
+	<true/>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
+	<key>NoSyncInstallUtilitiesPackage</key>
+	<true/>
+	<key>NoSyncInstallUtilitiesPackage_selection</key>
+	<integer>0</integer>
 	<key>NoSyncInstallationId</key>
 	<string>139490B1-29CE-4B22-B436-47D8916AB072</string>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
@@ -1437,7 +1451,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-04-16T12:31:50Z</date>
+	<date>2019-06-03T09:36:54Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
@@ -1447,9 +1461,13 @@
 	<key>ShowPaneTitles</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
-	<real>0.15262920673076927</real>
+	<real>0.10000000000000001</real>
 	<key>TabStyle</key>
 	<integer>1</integer>
+	<key>ToolbeltTools</key>
+	<array>
+		<string>Profiles</string>
+	</array>
 	<key>WindowNumber</key>
 	<true/>
 	<key>WordCharacters</key>
@@ -1457,6 +1475,6 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.2.8</string>
+	<string>3.2.9</string>
 </dict>
 </plist>
