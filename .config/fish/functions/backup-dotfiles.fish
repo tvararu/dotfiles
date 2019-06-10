@@ -8,4 +8,5 @@ function backup-dotfiles
   cp ~/.atom/config.cson $DFPATH/.atom
   cp ~/.atom/keymap.cson $DFPATH/.atom
   cp ~/.atom/styles.less $DFPATH/.atom
+  cp -r ~/.bin $DFPATH
 end
