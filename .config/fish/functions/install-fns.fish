@@ -1,3 +1,3 @@
 function install-fns
-  cp -rf ~/Github/dotfiles/.config/fish/functions/ ~/.config/fish/functions/
+  cp -rf ~/github/dotfiles/.config/fish/functions ~/.config/fish/functions
 end
