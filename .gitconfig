@@ -6,3 +6,5 @@
   gpgsign = true
 [core]
   excludesfile = /Users/tvararu/.gitignore.global
+[gpg]
+  program = gpg
