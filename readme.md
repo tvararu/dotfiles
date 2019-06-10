@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="screenshot.png" alt="Screenshot" />
+  <img src="screenshot.png" alt="Screenshot" width="650" />
 </div>
 
 # dotfiles.
