@@ -10,12 +10,13 @@ brew upgrade
 
 echo " brew installing utility/essential programs."
 brew install fish
+brew install fzf
 brew install gpg
 brew install hub
 brew install mosh
 brew install ssh-copy-id
-brew install switchaudio-osx
 brew install tree
+brew install vim
 brew install wget
 
 echo " brew installing development dependencies."
