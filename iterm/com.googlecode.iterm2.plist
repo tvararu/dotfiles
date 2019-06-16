@@ -18,6 +18,10 @@
 	<true/>
 	<key>ClosingTmuxTabKillsTmuxWindows_selection</key>
 	<integer>1</integer>
+	<key>ClosingTmuxWindowKillsTmuxWindows</key>
+	<true/>
+	<key>ClosingTmuxWindowKillsTmuxWindows_selection</key>
+	<integer>2</integer>
 	<key>Custom Color Presets</key>
 	<dict>
 		<key>One Dark</key>
@@ -576,10 +580,16 @@
 	<string>984A4E3D-F1C0-46C4-8E6F-701DD14B3D10</string>
 	<key>DimOnlyText</key>
 	<false/>
+	<key>DisableFullscreenTransparency</key>
+	<false/>
+	<key>EnableProxyIcon</key>
+	<false/>
 	<key>FlashTabBarInFullscreen</key>
 	<true/>
 	<key>HideActivityIndicator</key>
 	<false/>
+	<key>HideScrollbar</key>
+	<true/>
 	<key>HideTab</key>
 	<false/>
 	<key>HideTabCloseButton</key>
@@ -645,13 +655,13 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 126 606 469 0 0 1440 900 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>345 416 770 429 0 0 1440 900 </string>
+	<string>882 562 770 429 0 0 2560 1440 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 316 592 584 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>723 46 714 854 0 0 1440 900 </string>
+	<string>1708 0 850 1440 0 0 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>723 17 714 866 0 0 1440 900 </string>
+	<string>723 425 650 458 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>3 0 650 475 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
@@ -1324,7 +1334,7 @@
 			<key>Right Option Key Sends</key>
 			<integer>0</integer>
 			<key>Rows</key>
-			<integer>25</integer>
+			<integer>24</integer>
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
@@ -2199,7 +2209,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-06-09T21:47:25Z</date>
+	<date>2019-06-13T13:35:32Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
@@ -2211,7 +2221,7 @@
 	<key>SplitPaneDimmingAmount</key>
 	<real>0.10000000000000001</real>
 	<key>StretchTabsToFillBar</key>
-	<true/>
+	<false/>
 	<key>TabStyle</key>
 	<integer>1</integer>
 	<key>ToolbeltTools</key>
@@ -2220,6 +2230,8 @@
 	</array>
 	<key>UKCrashReporterLastCrashReportDate</key>
 	<real>1560164736</real>
+	<key>UseBorder</key>
+	<false/>
 	<key>WindowNumber</key>
 	<true/>
 	<key>WordCharacters</key>
