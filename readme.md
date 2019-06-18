@@ -18,7 +18,6 @@ Requires Xcode to work.
 - Installs `brew` if not present, as well as some CLI apps ([brew-install.sh](homebrew/brew-install.sh)) and GUI apps ([brew-cask-install.sh](homebrew/brew-cask-install.sh));
 - Configures [atom](configuration/atom.sh) and [keybase with gpg](configuration/keybase.sh);
 - Configures [.gitconfig](.gitconfig) and [gpg](.gnupg/gpg.conf) with my own git email and pgp key;
-- Configures `vim` with the most spartan [.vimrc](.vimrc) you've ever seen.
 
 ### Credits
 
