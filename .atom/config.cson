@@ -12,7 +12,7 @@
     titleBar: "hidden"
   editor:
     fontFamily: "\"Fira Code\""
-    fontSize: 15
+    fontSize: 16
     invisibles: {}
     preferredLineLength: 120
     showInvisibles: true
@@ -26,6 +26,8 @@
     ignoredNames: [
       "node_modules"
     ]
+    scoringSystem: "fast"
+    useRipGrep: true
   "language-babel":
     taggedTemplateGrammar: [
       "\"(?<=<style jsx>{)|(?<=<style jsx global>{)\":source.css.styled"
@@ -34,8 +36,7 @@
     disabledProviders: [
       "RuboCop"
     ]
-  "linter-ui-default":
-    showPanel: true
+  "linter-ui-default": {}
   "no-title-bar":
     enableLiberalWindowDragging: false
   "one-dark-ui": {}
