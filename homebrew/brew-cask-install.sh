@@ -11,6 +11,7 @@ brew cask install diskwave
 brew cask install iterm2
 brew cask install keybase
 brew cask install messenger
+brew cask install pock
 brew cask install qlmarkdown
 brew cask install slack
 brew cask install spectacle
