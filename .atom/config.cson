@@ -49,7 +49,6 @@
       parser: "flow"
   tabs:
     enableVcsColoring: true
-  "tree-view":
-    hideVcsIgnoredFiles: true
+  "tree-view": {}
   welcome:
     showOnStartup: false
