@@ -8,6 +8,7 @@ brew cask install atom
 brew cask install cathode
 brew cask install coconutbattery
 brew cask install diskwave
+brew cask install istat-menus
 brew cask install iterm2
 brew cask install keybase
 brew cask install messenger
