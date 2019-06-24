@@ -3,6 +3,7 @@
 echo " Installing native apps using \`brew cask\`."
 
 brew cask install 1password
+brew cask install aerial
 brew cask install alfred
 brew cask install atom
 brew cask install cathode
