@@ -7,9 +7,7 @@ apm install autocomplete-paths
 apm install case-switch
 apm install editorconfig
 apm install file-icons
-apm install intentions
 apm install language-babel
-apm install no-title-bar
 apm install pigments
 apm install prettier-atom
 apm install sort-lines
