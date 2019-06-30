@@ -650,20 +650,22 @@
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
+	<key>NSWindow Frame ProfilesPanel</key>
+	<string>765 1058 735 382 0 0 2560 1440 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>370 208 700 622 0 0 1440 900 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 126 606 469 0 0 1440 900 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>882 562 770 429 0 0 2560 1440 </string>
+	<string>331 358 796 486 0 0 1440 900 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
-	<string>99 316 592 584 0 0 1440 900 </string>
+	<string>230 856 592 584 0 0 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1708 0 850 1440 0 0 2560 1440 </string>
+	<string>723 17 714 883 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>723 425 650 458 0 0 1440 900 </string>
+	<string>126 442 650 458 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>3 0 650 475 0 0 1440 900 </string>
+	<string>3 982 650 458 0 0 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
 	<string>723 5 714 441 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
@@ -2064,7 +2066,7 @@
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
-			<integer>1000</integer>
+			<integer>0</integer>
 			<key>Selected Text Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -2209,7 +2211,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-06-13T13:35:32Z</date>
+	<date>2019-06-28T12:02:47Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
@@ -2229,7 +2231,7 @@
 		<string>Profiles</string>
 	</array>
 	<key>UKCrashReporterLastCrashReportDate</key>
-	<real>1560164736</real>
+	<real>1560455296</real>
 	<key>UseBorder</key>
 	<false/>
 	<key>WindowNumber</key>
