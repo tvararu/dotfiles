@@ -8,13 +8,15 @@
     "atom-ide-code-format":
       formatOnSave: true
   core:
+    disabledPackages: [
+      "github"
+    ]
     telemetryConsent: "limited"
     titleBar: "hidden"
   editor:
     fontFamily: "\"Fira Code\""
     fontSize: 16
     invisibles: {}
-    preferredLineLength: 120
     showInvisibles: true
     softWrap: true
   "exception-reporting":
