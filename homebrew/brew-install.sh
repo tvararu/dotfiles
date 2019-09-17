@@ -10,7 +10,9 @@ brew upgrade
 
 echo " brew installing utility/essential programs."
 brew install fish
+brew install ffmpeg
 brew install fzf
+brew install gifsicle
 brew install gpg
 brew install hub
 brew install mosh
