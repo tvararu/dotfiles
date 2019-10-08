@@ -80,6 +80,9 @@ defaults write com.apple.Dock tilesize -integer 48
 echo "- Wipe all (default) app icons from the Dock."
 defaults write com.apple.dock persistent-apps -array ""
 
+echo "- Don't show recent applications in Dock."
+defaults write com.apple.dock show-recents -bool false
+
 echo "\n Finder."
 
 echo "- Set default path to HOME directory."
@@ -173,7 +176,7 @@ defaults write org.m0k.transmission BlocklistAutoUpdate -bool true
 
 echo"\n iTerm2.app."
 
-echo "- Use the preferences in the dotfiles folder"
+echo "- Use the preferences in the dotfiles folder."
 defaults write com.googlecode.iterm2 PrefsCustomFolder -string "/Users/tvararu/Documents/config/iterm"
 
 echo "\n All done."
