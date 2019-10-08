@@ -16,6 +16,7 @@ brew install gifsicle
 brew install gpg
 brew install hub
 brew install mosh
+brew install pinentry-mac
 brew install ssh-copy-id
 brew install tree
 brew install vim
