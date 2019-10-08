@@ -14,10 +14,10 @@ Requires Xcode to work.
 
 ### Features
 
-- Initialises macOS (and some apps) with opinionated defaults in [macos.sh](defaults/macos.sh);
-- Installs `brew` if not present, as well as some CLI apps ([brew-install.sh](homebrew/brew-install.sh)) and GUI apps ([brew-cask-install.sh](homebrew/brew-cask-install.sh));
-- Configures [atom](configuration/atom.sh) and [keybase with gpg](configuration/keybase.sh);
-- Configures [.gitconfig](.gitconfig) and [gpg](.gnupg/gpg.conf) with my own git email and pgp key;
+- Initialises macOS (and some apps) with opinionated defaults in [macos.sh](defaults/macos.sh)
+- Installs `brew` if not present, as well as some CLI apps ([brew-install.sh](homebrew/brew-install.sh)) and GUI apps ([brew-cask-install.sh](homebrew/brew-cask-install.sh))
+- Configures [atom](configuration/atom.sh)
+- Configures [.gitconfig](.gitconfig) and [gpg](.gnupg/gpg.conf) with my own git email and pgp key
 
 ### Credits
 
