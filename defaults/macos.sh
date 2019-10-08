@@ -173,7 +173,7 @@ defaults write org.m0k.transmission BlocklistAutoUpdate -bool true
 
 echo"\n iTerm2.app."
 
-echo "- Disable the prompt when quitting iTerm."
-defaults write com.googlecode.iterm2 PromptOnQuit -bool false
+echo "- Use the preferences in the dotfiles folder"
+defaults write com.googlecode.iterm2 PrefsCustomFolder -string "/Users/tvararu/Documents/config/iterm"
 
 echo "\n All done."
