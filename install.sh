@@ -2,12 +2,11 @@
 
 echo "\n Hey there. Never mind me, just setting up your system.\n"
 
-./defaults/macos.sh
+./defaults.sh
 
-./homebrew/install.sh
+./homebrew.sh
 
-./configuration/atom.sh
-./configuration/keybase.sh
+./atom.sh
 
 cp .vimrc ~
 cp .gitconfig ~

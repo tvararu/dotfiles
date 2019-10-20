@@ -2,7 +2,6 @@
 
 echo " Installing atom packages."
 
-
 apm install atom-beautify
 apm install autocomplete-paths
 apm install busy-signal
