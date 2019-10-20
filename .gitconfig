@@ -1,7 +1,7 @@
 [user]
   name = Theodor Vararu
   email = theo@vararu.org
-  signingkey = F08553D8
+  signingkey = 2847F3FCF08553D8
 [commit]
   gpgsign = true
 [core]
