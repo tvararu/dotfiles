@@ -21,15 +21,6 @@ defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
 echo "- Check for software updates daily, not just once per week."
 defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 
-echo "- Use scroll gesture with the Ctrl (^) modifier key to zoom."
-defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
-defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
-
-echo "- Disable guest sign in and guest access to file shares."
-defaults write /Library/Preferences/com.apple.loginwindow GuestEnabled -bool NO
-defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server AllowGuestAccess -bool NO
-defaults write /Library/Preferences/com.apple.AppleFileServer guestAccess -bool NO
-
 echo "- Use Graphite colour for Appearance."
 osascript -e 'tell application "System Events" to tell appearance preferences to set appearance to graphite'
 
@@ -144,12 +135,6 @@ echo "- Enable custom stylesheet."
 defaults write com.apple.Safari UserStyleSheetEnabled -bool true
 defaults write com.apple.Safari UserStyleSheetLocationURLString -string "/Users/tvararu/github/dotfiles/safari.css"
 
-echo "\n Spotlight."
-
-echo "- Disable Spotlight indexing for any volume that gets mounted and has not yet been indexed before."
-# Use `sudo mdutil -i off "/Volumes/foo"` to stop indexing any volume.
-sudo defaults write /.Spotlight-V100/VolumeConfiguration Exclusions -array "/Volumes"
-
 echo "\n Transmission.app."
 
 echo "- Use ~/Downloads to store incomplete downloads, and as default download folder."
@@ -176,7 +161,7 @@ defaults write org.m0k.transmission BlocklistAutoUpdate -bool true
 
 echo"\n iTerm2.app."
 
-echo "- Use the preferences in the dotfiles folder."
+echo "- Use the preferences in the iCloud folder."
 defaults write com.googlecode.iterm2 PrefsCustomFolder -string "/Users/tvararu/Documents/config/iterm"
 
 echo "\n All done."
