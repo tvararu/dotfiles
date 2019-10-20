@@ -8,6 +8,7 @@ echo "\n Hey there. Never mind me, just setting up your system.\n"
 
 ./atom.sh
 
+cp .hushlogin ~
 cp .vimrc ~
 cp .gitconfig ~
 cp .gitignore.global ~
