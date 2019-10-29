@@ -159,7 +159,7 @@ defaults write org.m0k.transmission BlocklistNew -bool true
 defaults write org.m0k.transmission BlocklistURL -string "http://john.bitsurge.net/public/biglist.p2p.gz"
 defaults write org.m0k.transmission BlocklistAutoUpdate -bool true
 
-echo"\n iTerm2.app."
+echo "\n iTerm2.app."
 
 echo "- Use the preferences in the iCloud folder."
 defaults write com.googlecode.iterm2 PrefsCustomFolder -string "/Users/tvararu/Documents/config/iterm"
