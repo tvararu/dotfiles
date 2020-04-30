@@ -10,7 +10,6 @@ apm install editorconfig
 apm install ex-mode
 apm install file-icons
 apm install intentions
-apm install language-babel
 apm install linter
 apm install linter-ui-default
 apm install no-title-bar
