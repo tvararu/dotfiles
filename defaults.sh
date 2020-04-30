@@ -111,19 +111,19 @@ defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool false
 
 echo "\n Safari."
 
-echo "- Set home page to about:blank."
+echo "- Set home page to about:blank. (broken?)"
 defaults write com.apple.Safari HomePage -string "about:blank"
 
-echo "- Always show tab bar."
+echo "- Always show tab bar. (broken?)"
 defaults write com.apple.Safari AlwaysShowTabBar -boolean true
 
-echo "- Enable Safari’s debug menu."
+echo "- Enable Safari’s debug menu. (broken?)"
 defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
 
 echo "- Make Safari’s search banners default to Contains instead of Starts With."
 defaults write com.apple.Safari FindOnPageMatchesWordStartsOnly -bool false
 
-echo "- Enable the Develop menu and the Web Inspector in Safari."
+echo "- Enable the Develop menu and the Web Inspector in Safari. (broken?)"
 defaults write com.apple.Safari IncludeDevelopMenu -bool true
 defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
 defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true
@@ -134,7 +134,7 @@ defaults write com.apple.Safari AutoFillPasswords -bool false
 defaults write com.apple.Safari AutoFillCreditCardData -bool false
 defaults write com.apple.Safari AutoFillMiscellaneousForms -bool false
 
-echo "- Enable custom stylesheet."
+echo "- Enable custom stylesheet. (broken?)"
 defaults write com.apple.Safari UserStyleSheetEnabled -bool true
 defaults write com.apple.Safari UserStyleSheetLocationURLString -string "/Users/tvararu/github/dotfiles/safari.css"
 
