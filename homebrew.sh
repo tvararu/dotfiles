@@ -6,7 +6,7 @@ if command -v brew >/dev/null 2>&1; then
 else
   echo " Installing Homebrew. (http://brew.sh)"
   echo " Please install the command line tools when prompted, and press 'enter' after it's done.\n"
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
   brew doctor
   echo " Homebrew successfully installed.\n"
 fi
