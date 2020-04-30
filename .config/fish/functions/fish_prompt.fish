@@ -8,12 +8,7 @@ function _git_branch_name
 end
 
 function _is_git_dirty
-  set -l show_untracked (git config --bool bash.showUntrackedFiles)
-  set untracked ''
-  if [ "$theme_display_git_untracked" = 'no' -o "$show_untracked" = 'false' ]
-    set untracked '--untracked-files=no'
-  end
-  echo (command git status -s --ignore-submodules=dirty $untracked ^/dev/null)
+  echo (command git status -s --ignore-submodules=dirty ^/dev/null)
 end
 
 function fish_prompt
@@ -26,9 +21,9 @@ function fish_prompt
   set -l normal (set_color normal)
 
   if test $last_status = 0
-      set arrow "$green➜ "
+    set arrow "$green➜ "
   else
-      set arrow "$red➜ "
+    set arrow "$red➜ "
   end
   set -l cwd $cyan(basename (prompt_pwd))
 
