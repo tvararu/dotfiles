@@ -74,6 +74,9 @@ defaults write com.apple.dock persistent-apps -array ""
 echo "- Don't show recent applications in Dock."
 defaults write com.apple.dock show-recents -bool false
 
+echo "- Restarting the Dock."
+killall Dock
+
 echo "\n Finder."
 
 echo "- Set default path to HOME directory."
