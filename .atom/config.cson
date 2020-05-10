@@ -10,6 +10,7 @@
   core:
     disabledPackages: [
       "github"
+      "spell-check"
     ]
     telemetryConsent: "limited"
     titleBar: "hidden"
@@ -50,6 +51,10 @@
       showInStatusBar: true
     prettierOptions:
       parser: "flow"
+  "spell-check":
+    locales: [
+      "en-GB"
+    ]
   tabs:
     enableVcsColoring: true
   "tree-view": {}
