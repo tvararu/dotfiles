@@ -1,3 +1,3 @@
 function backup-music-to-nas
-	time rsync -a -v --ignore-existing /Users/tvararu/Music/iTunes/iTunes\ Media/Music/* /Volumes/Public/Music
+	time rsync -a -v --ignore-existing /Users/tvararu/Music/Music/Media.localized/* /Volumes/Public/Music
 end
