@@ -57,6 +57,7 @@
     ]
   tabs:
     enableVcsColoring: true
-  "tree-view": {}
+  "tree-view":
+    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
