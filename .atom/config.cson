@@ -47,7 +47,6 @@
   "one-light-ui": {}
   "prettier-atom":
     formatOnSaveOptions:
-      enabled: true
       showInStatusBar: true
     prettierOptions:
       parser: "flow"
