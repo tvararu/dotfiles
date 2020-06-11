@@ -134,10 +134,6 @@ defaults write com.apple.Safari AutoFillPasswords -bool false
 defaults write com.apple.Safari AutoFillCreditCardData -bool false
 defaults write com.apple.Safari AutoFillMiscellaneousForms -bool false
 
-echo "- Enable custom stylesheet. (broken?)"
-defaults write com.apple.Safari UserStyleSheetEnabled -bool true
-defaults write com.apple.Safari UserStyleSheetLocationURLString -string "/Users/tvararu/github/dotfiles/safari.css"
-
 echo "\n Transmission.app."
 
 echo "- Use ~/Downloads to store incomplete downloads, and as default download folder."
