@@ -55,3 +55,4 @@ mas "com.apple.iWork.Pages", id: 409201541
 mas "com.apple.dt.Xcode", id: 497799835
 mas "com.giorgiocalderolla.Wipr-Mac", id: 1320666476
 mas "com.wireguard.macos", id: 1451685025
+mas "com.facebook.archon", id: 1480068668
