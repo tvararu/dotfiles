@@ -39,14 +39,14 @@
     disabledProviders: [
       "RuboCop"
     ]
-  "linter-ui-default":
-    showPanel: true
+  "linter-ui-default": {}
   "no-title-bar":
     enableLiberalWindowDragging: false
   "one-dark-ui": {}
   "one-light-ui": {}
   "prettier-atom":
     formatOnSaveOptions:
+      enabled: true
       showInStatusBar: true
     prettierOptions:
       parser: "flow"
@@ -56,7 +56,6 @@
     ]
   tabs:
     enableVcsColoring: true
-  "tree-view":
-    hideVcsIgnoredFiles: true
+  "tree-view": {}
   welcome:
     showOnStartup: false
