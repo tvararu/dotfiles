@@ -7,10 +7,15 @@
   "atom-ide-ui":
     "atom-ide-code-format":
       formatOnSave: true
+    "atom-ide-diagnostics-ui":
+      autoVisibility: true
+      showDirectoryColumn: true
+    use: {}
   core:
     disabledPackages: [
       "github"
       "spell-check"
+      "linter"
     ]
     telemetryConsent: "limited"
     titleBar: "hidden"
@@ -39,7 +44,8 @@
     disabledProviders: [
       "RuboCop"
     ]
-  "linter-ui-default": {}
+  "linter-ui-default":
+    showDecorations: false
   "no-title-bar":
     enableLiberalWindowDragging: false
   "one-dark-ui": {}

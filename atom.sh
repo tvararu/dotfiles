@@ -3,6 +3,8 @@
 echo " Installing atom packages."
 
 apm install atom-beautify
+apm install atom-ide-ui
+apm install atom-typescript
 apm install autocomplete-paths
 apm install busy-signal
 apm install case-switch
