@@ -45,7 +45,9 @@
       "RuboCop"
     ]
   "linter-ui-default":
+    panelHeight: 196
     showDecorations: false
+    showPanel: true
   "no-title-bar":
     enableLiberalWindowDragging: false
   "one-dark-ui": {}
