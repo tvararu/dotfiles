@@ -714,6 +714,12 @@
         "options": {
           "full_name": "istat-menus"
         }
+      },
+      "monitorcontrol": {
+        "version": "2.0.0",
+        "options": {
+          "full_name": "monitorcontrol"
+        }
       }
     },
     "mas": {
