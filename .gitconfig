@@ -3,7 +3,7 @@
   email = theo@vararu.org
   signingkey = 2847F3FCF08553D8
 [commit]
-  gpgsign = true
+  gpgsign = false
 [core]
   excludesfile = /Users/tvararu/.gitignore.global
 [gpg]
