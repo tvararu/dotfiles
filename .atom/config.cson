@@ -12,6 +12,7 @@
       showDirectoryColumn: true
     use: {}
   core:
+    autoHideMenuBar: true
     disabledPackages: [
       "github"
       "spell-check"
@@ -48,8 +49,6 @@
     panelHeight: 196
     showDecorations: false
     showPanel: true
-  "no-title-bar":
-    enableLiberalWindowDragging: false
   "one-dark-ui": {}
   "one-light-ui": {}
   "prettier-atom":
