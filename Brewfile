@@ -15,12 +15,6 @@ brew "tree"
 brew "vim"
 brew "wget"
 
-# development dependencies
-brew "node"
-brew "postgresql", restart_service: true
-brew "rbenv"
-brew "yarn"
-
 # games and fun stuff
 brew "archey"
 brew "cheat"
@@ -35,17 +29,12 @@ brew "youtube-dl"
 
 # native and gui apps
 cask "1password"
-cask "aerial"
 cask "alfred"
-cask "atom"
 cask "diskwave"
 cask "homebrew/cask-fonts/font-fira-code"
-cask "istat-menus"
 cask "iterm2"
 cask "keybase"
-cask "monitorcontrol"
 cask "pock"
-cask "slack"
 cask "spectacle"
 cask "telegram"
 cask "the-unarchiver"
